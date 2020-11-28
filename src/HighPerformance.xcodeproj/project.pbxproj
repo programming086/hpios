@@ -1005,7 +1005,7 @@
 				TargetAttributes = {
 					8B08C8921ABF347900DB4F02 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XZ4U9NFFE7;
+						DevelopmentTeam = 3UPD288LR6;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1014,7 +1014,7 @@
 					};
 					8B08C8A01ABF347A00DB4F02 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XZ4U9NFFE7;
+						DevelopmentTeam = 3UPD288LR6;
 					};
 					8B530C0119A1373700F97DE9 = {
 						DevelopmentTeam = 3UPD288LR6;
@@ -1043,15 +1043,16 @@
 						};
 					};
 					8B530C2519A1373700F97DE9 = {
+						DevelopmentTeam = 3UPD288LR6;
 						TestTargetID = 8B530C0119A1373700F97DE9;
 					};
 					8BEFB5BF1ABBFB20001CDF45 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XZ4U9NFFE7;
+						DevelopmentTeam = 3UPD288LR6;
 					};
 					8BEFB5D31ABC0065001CDF45 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XZ4U9NFFE7;
+						DevelopmentTeam = 3UPD288LR6;
 					};
 				};
 			};
@@ -1424,6 +1425,7 @@
 				CODE_SIGN_ENTITLEMENTS = documentProvider/documentProvider.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1445,6 +1447,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = documentProvider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1461,6 +1464,7 @@
 				CODE_SIGN_ENTITLEMENTS = documentProviderFileProvider/documentProviderFileProvider.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1483,6 +1487,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = documentProviderFileProvider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1657,6 +1662,7 @@
 			baseConfigurationReference = A40DD76AA1E070A60E03C435 /* Pods-HighPerformanceTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HighPerformance.app/HighPerformance";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1682,6 +1688,7 @@
 			baseConfigurationReference = 0B04AEF5608EDD440EB6A26B /* Pods-HighPerformanceTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HighPerformance.app/HighPerformance";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1706,6 +1713,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1728,6 +1736,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = actionRead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1745,6 +1754,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1767,6 +1777,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = shareRead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
