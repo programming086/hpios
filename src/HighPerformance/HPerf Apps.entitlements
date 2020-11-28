@@ -24,13 +24,13 @@
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.m10v.hperf</string>
+		<string>group.com.brovko-rs.hperf</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.m10v.hperf</string>
-		<string>$(AppIdentifierPrefix)com.m10v</string>
-		<string>$(AppIdentifierPrefix)com.m10v.shared</string>
+		<string>$(AppIdentifierPrefix)com.brovko-rs.hperf</string>
+		<string>$(AppIdentifierPrefix)com.brovko-rs</string>
+		<string>$(AppIdentifierPrefix)com.brovko-rs.shared</string>
 	</array>
 </dict>
 </plist>

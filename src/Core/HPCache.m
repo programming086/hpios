@@ -8,7 +8,7 @@
 
 #import "HPCache.h"
 
-static const char* const kCacheQueueName = "com.m10v.hperf.cache.queue";
+static const char* const kCacheQueueName = "com.brovko-rs.hperf.cache.queue";
 
 @interface HPCache ()
 

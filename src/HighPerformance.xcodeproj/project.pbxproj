@@ -917,6 +917,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B530C3719A1373700F97DE9 /* Build configuration list for PBXNativeTarget "HighPerformance" */;
 			buildPhases = (
+				20DDC3405F3BC88A0D07900E /* [CP] Check Pods Manifest.lock */,
 				B1115897C22CA8450B6C42CF /* 📦 Check Pods Manifest.lock */,
 				8B530BFE19A1373700F97DE9 /* Sources */,
 				8B530BFF19A1373700F97DE9 /* Frameworks */,
@@ -924,8 +925,6 @@
 				8B43227719C55FE900813AD8 /* Fabric */,
 				8BEFB5CF1ABBFB20001CDF45 /* Embed App Extensions */,
 				8B74BF161B2D4D44009E1BC0 /* NewRelic */,
-				E0FA6384004DFC526A01A149 /* 📦 Embed Pods Frameworks */,
-				5AB9E5678B897DD138C02D0C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -944,12 +943,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B530C3A19A1373700F97DE9 /* Build configuration list for PBXNativeTarget "HighPerformanceTests" */;
 			buildPhases = (
+				F9002BA6AD46B03EF7ADBDD0 /* [CP] Check Pods Manifest.lock */,
 				2B748E3C176D22EDD10D1584 /* 📦 Check Pods Manifest.lock */,
 				8B530C2219A1373700F97DE9 /* Sources */,
 				8B530C2319A1373700F97DE9 /* Frameworks */,
 				8B530C2419A1373700F97DE9 /* Resources */,
-				6B0FA949B0E2B687CCD9EA28 /* 📦 Embed Pods Frameworks */,
-				FBFDC28C30BD80D234A9C9B9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1019,7 +1017,7 @@
 						DevelopmentTeam = XZ4U9NFFE7;
 					};
 					8B530C0119A1373700F97DE9 = {
-						DevelopmentTeam = XZ4U9NFFE7;
+						DevelopmentTeam = 3UPD288LR6;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1062,6 +1060,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1148,6 +1147,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20DDC3405F3BC88A0D07900E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HighPerformance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2B748E3C176D22EDD10D1584 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1161,36 +1182,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5AB9E5678B897DD138C02D0C /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighPerformance/Pods-HighPerformance-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B0FA949B0E2B687CCD9EA28 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighPerformanceTests/Pods-HighPerformanceTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8B43227719C55FE900813AD8 /* Fabric */ = {
@@ -1236,34 +1227,26 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E0FA6384004DFC526A01A149 /* 📦 Embed Pods Frameworks */ = {
+		F9002BA6AD46B03EF7ADBDD0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HighPerformanceTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighPerformance/Pods-HighPerformance-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBFDC28C30BD80D234A9C9B9 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighPerformanceTests/Pods-HighPerformanceTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1600,6 +1583,7 @@
 				CODE_SIGN_ENTITLEMENTS = "HighPerformance/HPerf Apps.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3pp",
@@ -1622,6 +1606,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brovko-rs.hperf";
 				PRODUCT_NAME = HighPerformance;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1639,6 +1624,7 @@
 				CODE_SIGN_ENTITLEMENTS = "HighPerformance/HPerf Apps.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3UPD288LR6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3pp",
@@ -1659,6 +1645,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brovko-rs.hperf";
 				PRODUCT_NAME = HighPerformance;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

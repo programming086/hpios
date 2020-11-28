@@ -24,7 +24,7 @@
 }
 
 -(NSString *)activityType {
-	return @"com.m10v.HiPerf.share";
+	return @"com.brovko-rs.HiPerf.share";
 }
 
 -(NSString *)activityTitle {

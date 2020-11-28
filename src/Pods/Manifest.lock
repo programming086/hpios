@@ -49,6 +49,16 @@ DEPENDENCIES:
   - PonyDebugger (= 0.4.3)
   - ReactiveCocoa (= 2.5)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - CocoaLumberjack
+    - Expecta
+    - OCMock
+    - PonyDebugger
+    - ReactiveCocoa
+    - SocketRocket
+
 SPEC CHECKSUMS:
   AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
@@ -60,4 +70,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c64e226fedacdd915a0a6353b2eba239ce041f15
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.8.4
